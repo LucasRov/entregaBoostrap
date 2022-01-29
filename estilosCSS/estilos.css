@@ -5,8 +5,14 @@
     background-position: center;
     background-position-y: 100%;
 }
-
+/*ESTILOS GENERALES*/
 /*ESTILOS NAV*/
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
 @media screen and (min-width:992px){
     #navbarNav{
         display: flex;
@@ -25,31 +31,89 @@
 
 /*FIN ESTILOS NAV*/
 h1{
+    margin-top: 15%;
     text-align: center;
     color: blue;
     font-weight: 500;
-    font-size: 2,5rem;
+    font-size:3rem;
 }
 
 h2{
     text-align: center;
-    font-size: 1rem;
+    font-size: 2rem;
     color: white;
     margin: 5%;
 }
 
 .estudio{
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 500;
     color: white;
     margin: 2%;
+}
+
+@media screen and (max-width:992px){
+    h1{
+        margin-top: 30%
+    }
+}
+
+
+/*FIN ESTILOS GENERALES*/
+
+
+/*ESTILOS INDEX*/
+@media screen and (max-width:992px){
+    .video video{
+        margin-top: 10%;
+    }
+}
+@media screen and (max-width:600px){
+    .video video{
+        margin-top: 15%;
+    }
+}
+
+
+/*FIN ESTILOS INDEX*/
+
+
+/*ESTILOS PAGE NOSOTROS*/
+.textoTitulo{
+    margin: 5%;
+}
+
+.imagenPersonal img{
+    width: 70%;
+}
+@media screen and (min-width:992px){
+    
+    .imagenHistoria{
+        display: flex;
+        justify-content: center;
+    }
+    .imagenHistoria img{
+        width: 100%;
+    }
+}
+@media screen and (max-width:992px){
+    .imagenPersonal{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .imagen{
+        width: 50%;
+    }
+    .historia{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
 }
 
-.titulos{
-    margin-top: 10%;
-}
 
 
 
